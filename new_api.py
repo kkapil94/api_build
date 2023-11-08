@@ -23,7 +23,7 @@ app.add_middleware(
 cap = cv2.VideoCapture(0)
 
 # Define an endpoint for real-time face detection
-@app.get("/realtime_face_detection/")
+@app.get("/")
 async def realtime_face_detection():
     def generate_frames():
         while True:
