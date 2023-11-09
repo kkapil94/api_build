@@ -4,3 +4,4 @@ numpy
 starlette
 pandas
 uvicorn
+aiofiles
