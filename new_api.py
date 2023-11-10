@@ -1,12 +1,7 @@
 import cv2
 from fastapi import FastAPI, File, UploadFile
-from tempfile import NamedTemporaryFile
-from fastapi.responses import StreamingResponse, JSONResponse
-from fastapi.concurrency import run_in_threadpool
 import aiofiles
 import os
-import numpy as np
-import time
 
 app = FastAPI()
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
